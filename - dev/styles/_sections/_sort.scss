@@ -54,6 +54,11 @@
 	@include absolute-center;
 }
 
+.sort__select--wrap {
+	padding-top: 11px;
+	padding-left: 20px;
+}
+
 $views-map: sprite-map('icons/views/*.png', $spacing: 70px);
 $items: rows, grids, lines;
 
@@ -69,6 +74,14 @@ $items: rows, grids, lines;
 			.sort__view-icon {
 				@include get-sprite($views-map, $hover-icon);
 			}			
+		}
+
+		&.active {
+			$hover-icon: $item + '-hover';
+
+			.sort__view-icon {
+				@include get-sprite($views-map, $hover-icon);
+			}	
 		}
 	}
 }

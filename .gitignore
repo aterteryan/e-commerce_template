@@ -39,6 +39,7 @@ Thumbs.db
 # Folders #
 ######################
 /.sass-cache
+/bower_components
 /node_modules
 /.idea
 /img
